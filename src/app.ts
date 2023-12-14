@@ -23,6 +23,10 @@ app.get("/", (req, res) => {
   res.send(`Hello World!` + isJustineAnAdult);
 });
 
+app.get("/help", (req, res) => {
+  res.send(`Help`);
+});
+
 app.listen(port, () => {
   return console.log(`Express is listening at http://localhost:${port}`);
 });
